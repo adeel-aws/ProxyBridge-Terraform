@@ -27,7 +27,7 @@ module "ec2" {
   instance_name     = var.instance_name
   key_name          = var.keypair
   enable_ssm        = var.enable_ssm
-  user_data         = file("${path.module}/squid-proxy.sh")
+  user_data         = file("./squid-proxy.sh")
   environment       = var.environment
   
 }
